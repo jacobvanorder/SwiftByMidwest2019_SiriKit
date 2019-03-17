@@ -1,0 +1,212 @@
+{
+    "name": "Swift por Midwest",
+    "locationName": "Elk Grove Holiday Inn",
+    "locationCoordinates": {
+        "lat": 42.011308,
+        "long": -87.959747
+    },
+    "speakers": [
+        {
+            "firstName": "Mark",
+            "lastName": "Dalrymple",
+            "talkIds": [
+                0,
+                9
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5a15b8b208fc6261848415/1548952048474/markd-sxmw.png?format=300w",
+            "id": 0
+        },
+        {
+            "firstName": "Liz",
+            "lastName": "Marley",
+            "talkIds": [
+                1
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c49f5b888251b738e0b71c5/1548951948939/liz-marley.png?format=300w",
+            "id": 1
+        },
+        {
+            "firstName": "Jacob",
+            "lastName": "Van Order",
+            "talkIds": [
+                2
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c8035c771c10b2e99ee85d5/1551906252058/jacob-van-order.png?format=300w",
+            "id": 2
+        },
+        {
+            "firstName": "Rob",
+            "lastName": "Napier",
+            "talkIds": [
+                3
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c53234f2b6a2803e8c957a7/1548952408165/rob-napier.png?format=300w",
+            "id": 3
+        },
+        {
+            "firstName": "Jon-Tait",
+            "lastName": "Beason",
+            "talkIds": [
+                4
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5322276d2a73238d481597/1548952163831/Jon-Tait-Beason.png?format=300w",
+            "id": 4
+        },
+        {
+            "firstName": "Jen",
+            "lastName": "Kelley",
+            "talkIds": [
+                5
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5db99c9140b7e2e466d0d5/1549646241861/jen-Kelley.png?format=300w",
+            "id": 5
+        },
+        {
+            "firstName": "Daniel",
+            "lastName": "Steinberg",
+            "talkIds": [
+                6,
+                8
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c477d714fa51a8e6eb1b474/1548177110958/daniel-steinberg.png?format=300w",
+            "id": 6
+        },
+        {
+            "firstName": "Jamiee",
+            "lastName": "Newberry",
+            "talkIds": [
+                7
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c53230a898583431b6350e6/1548952359588/jaimee-newberry.png?format=300w",
+            "id": 7
+        },
+        {
+            "firstName": "Ben",
+            "lastName": "Scheirman",
+            "talkIds": [
+                10
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c6c20cb8165f5f2b2a39e2a/1551906037150/ben-scheirman.png?format=300w",
+            "id": 8
+        },
+        {
+            "firstName": "James",
+            "lastName": "Dempsey",
+            "talkIds": [
+                11
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5322af88251bdcc443bb77/1548952279655/james-dempsey.png?format=300w",
+            "id": 9
+        }
+    ],
+    "talks": [
+        {
+            "title": "Depuración",
+            "startingTime": 577202400,
+            "endingTime": 577206000,
+            "id": 0,
+            "speakerId": 0,
+            "talkDescription": "La depuración es algo que tenemos que hacer todo el tiempo. Cuanto mejor sea la depuración, más tiempo podrá dedicar a las cosas divertidas. Comience el día con algunos pensamientos acerca de la depuración.",
+            "subject": "Depuración"
+        },
+        {
+            "title": "Wh@t is th@t?",
+            "startingTime": 577297800,
+            "endingTime": 577301400,
+            "id": 9,
+            "speakerId": 0,
+            "talkDescription": "Atributos: los usas todo el tiempo, pero ¿qué son realmente? ¿Cuáles son todos los atributos diferentes disponibles? ¿Cómo trabajan? Únase a mí para una exploración de los atributos de Swift, que termina con una exploración de la fuente del compilador Swift. Para disfrutar al máximo, echa un vistazo a la fuente del compilador antes de llegar.",
+            "subject": "Atributos"
+        },
+        {
+            "title": "Soy un codificador: Codable y NSCoding",
+            "startingTime": 577206900,
+            "endingTime": 577210500,
+            "id": 1,
+            "speakerId": 1,
+            "talkDescription": "¿Es Codable solo un nuevo nombre para NSCoding? ¿Por qué tenemos ambos? ¿Podemos usarlos juntos? También es posible que desee asistir a esta charla si ha querido apoyar la restauración estatal.",
+            "subject": "Restauración del estado"
+        },
+        {
+            "title": "Hola Siri, ¿Cómo te implemento?",
+            "startingTime": 577211400,
+            "endingTime": 577215000,
+            "id": 2,
+            "speakerId": 2,
+            "talkDescription": "Introducida en iOS 10 y expandida dentro de iOS 12, SiriKit permite que su aplicación interactúe con el usuario mediante comandos de voz. Cubriremos las implementaciones pequeñas, medianas y grandes de los accesos directos de SiriKit al hablar de los errores inesperados, así como los conceptos de lo que contribuye a una interacción significativa con Siri para el usuario.",
+            "subject": "SiriKit"
+        },
+        {
+            "title": "Swift genérico: no se supone que daña",
+            "startingTime": 577222200,
+            "endingTime": 577225800,
+            "id": 3,
+            "speakerId": 3,
+            "talkDescription": "Dijeron que Swift está “orientado a los protocolos”, así que usted escribió los protocolos. Pero querías que fueran genéricos, por lo que agregaste tipos asociados. Pero tus colecciones se rompieron, así que agregaste borradores de tipo. Pero tus “as” -casts se rompieron, así que cambiaste a Any. Pero luego todo se rompió, así que lees sobre Mirror. Y empezaron las lágrimas. ¿Por qué tenía que ser tan difícil hacer una matriz?\n\nNo tiene que ser tan difícil. Pero es muy fácil usar las herramientas equivocadas para resolver los problemas incorrectos. En esta sesión te ayudaré a reevaluar lo que significa escribir Swift genérico y cómo elegir las herramientas adecuadas para el trabajo. Ya sea que se trate de controladores de vista reutilizables, redes flexibles, interfaz de usuario basada en datos, pruebas efectivas de unidades o simplemente la alegría de las estructuras de datos elegantes, aprenderá a trabajar con Swift y no enfrentará al compilador.",
+            "subject": "Genéricos"
+        },
+        {
+            "title": "Swift como Luz",
+            "startingTime": 577226700,
+            "endingTime": 577230300,
+            "id": 4,
+            "speakerId": 4,
+            "talkDescription": "La impresora láser 3D Glowforge crea cosas hermosas de madera, cuero, acrílico y más. Al aprovechar Core Graphics y otras API de iOS, nuestra aplicación permite a los usuarios crear y manipular gráficos vectoriales que pueden enviar a su Glowforge. En esta charla, revisaremos cómo construimos algunas de estas características en Swift y cómo Swift ayuda a que nuestras soluciones sean más sólidas, elegantes y seguras.",
+            "subject": "Impresión 3D con Swift"
+        },
+        {
+            "title": "Los cuervos pueden entender los símbolos, ¿puede el marco de Visión de Apple?",
+            "startingTime": 577231200,
+            "endingTime": 577234800,
+            "id": 5,
+            "speakerId": 5,
+            "talkDescription": "Detalles muy pronto!",
+            "subject": "Marco de visión"
+        },
+        {
+            "title": "Viviendo la vida monástica",
+            "startingTime": 577238400,
+            "endingTime": 577242000,
+            "id": 6,
+            "speakerId": 6,
+            "talkDescription": "Usted puede pensar que los Functors, los Functors aplicativos, y las Mónadas dan miedo. En esta nota clave, Daniel te mostrará que “ya estás empapándote de ella”. Estos patrones están en la vida que ya estás viviendo, ahora solo tenemos que introducirlos en tu código. Aunque la familiaridad con Cálculo y el desarrollo impulsado por el odio puede ayudarlo a disfrutar de la sesión, tampoco es necesario.",
+            "subject": "Functores"
+        },
+        {
+            "title": "Tipo de resultado de Swift 5",
+            "startingTime": 577293300,
+            "endingTime": 577296900,
+            "id": 8,
+            "speakerId": 6,
+            "talkDescription": "Durante años, muchos desarrolladores han agregado su propio tipo de resultado a sus proyectos. A partir de Swift 5, el resultado es parte de la biblioteca estándar de Swift. En esta sesión, dedicaremos la mayor parte de nuestro tiempo a motivar el resultado al analizar errores, opciones y errores fatales. Una vez que veamos la necesidad de Result, veremos cómo se implementa y cómo lo conectamos a su flujo de trabajo utilizando map y flatMap.",
+            "subject": "Tipo de resultado de Swift"
+        },
+        {
+            "title": "TBA",
+            "startingTime": 577288800,
+            "endingTime": 577292400,
+            "id": 7,
+            "speakerId": 7,
+            "talkDescription": "Detalles muy pronto!",
+            "subject": "Algo genial"
+        },
+        {
+            "title": "TBA",
+            "startingTime": 577305000,
+            "endingTime": 577308600,
+            "id": 10,
+            "speakerId": 8,
+            "talkDescription": "Detalles muy pronto!",
+            "subject": "Algo genial"
+        },
+        {
+            "title": "TBA",
+            "startingTime": 577309500,
+            "endingTime": 577313100,
+            "id": 11,
+            "speakerId": 9,
+            "talkDescription": "Detalles muy pronto!",
+            "subject": "Algo genial"
+        }
+    ]
+}

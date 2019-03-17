@@ -1,0 +1,212 @@
+{
+    "name": "Swift by Midwest",
+    "locationName": "Elk Grove Holiday Inn",
+    "locationCoordinates": {
+        "lat": 42.011308,
+        "long": -87.959747
+    },
+    "speakers": [
+        {
+            "firstName": "Mark",
+            "lastName": "Dalrymple",
+            "talkIds": [
+                0,
+                9
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5a15b8b208fc6261848415/1548952048474/markd-sxmw.png?format=300w",
+            "id": 0
+        },
+        {
+            "firstName": "Liz",
+            "lastName": "Marley",
+            "talkIds": [
+                1
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c49f5b888251b738e0b71c5/1548951948939/liz-marley.png?format=300w",
+            "id": 1
+        },
+        {
+            "firstName": "Jacob",
+            "lastName": "Van Order",
+            "talkIds": [
+                2
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c8035c771c10b2e99ee85d5/1551906252058/jacob-van-order.png?format=300w",
+            "id": 2
+        },
+        {
+            "firstName": "Rob",
+            "lastName": "Napier",
+            "talkIds": [
+                3
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c53234f2b6a2803e8c957a7/1548952408165/rob-napier.png?format=300w",
+            "id": 3
+        },
+        {
+            "firstName": "Jon-Tait",
+            "lastName": "Beason",
+            "talkIds": [
+                4
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5322276d2a73238d481597/1548952163831/Jon-Tait-Beason.png?format=300w",
+            "id": 4
+        },
+        {
+            "firstName": "Jen",
+            "lastName": "Kelley",
+            "talkIds": [
+                5
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5db99c9140b7e2e466d0d5/1549646241861/jen-Kelley.png?format=300w",
+            "id": 5
+        },
+        {
+            "firstName": "Daniel",
+            "lastName": "Steinberg",
+            "talkIds": [
+                6,
+                8
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c477d714fa51a8e6eb1b474/1548177110958/daniel-steinberg.png?format=300w",
+            "id": 6
+        },
+        {
+            "firstName": "Jamiee",
+            "lastName": "Newberry",
+            "talkIds": [
+                7
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c53230a898583431b6350e6/1548952359588/jaimee-newberry.png?format=300w",
+            "id": 7
+        },
+        {
+            "firstName": "Ben",
+            "lastName": "Scheirman",
+            "talkIds": [
+                10
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c6c20cb8165f5f2b2a39e2a/1551906037150/ben-scheirman.png?format=300w",
+            "id": 8
+        },
+        {
+            "firstName": "James",
+            "lastName": "Dempsey",
+            "talkIds": [
+                11
+            ],
+            "profileImageURL": "https://static1.squarespace.com/static/5c17e8af9f8770c948b55d3f/t/5c5322af88251bdcc443bb77/1548952279655/james-dempsey.png?format=300w",
+            "id": 9
+        }
+    ],
+    "talks": [
+        {
+            "title": "Debugging",
+            "startingTime": 577202400,
+            "endingTime": 577206000,
+            "id": 0,
+            "speakerId": 0,
+            "talkDescription": "Debugging is something we have to do all the time. The better you get at debugging the more time you can spend on the fun stuff.  Start off the day with some thoughts about debugging.",
+            "subject": "debugging"
+        },
+        {
+            "title": "Wh@t is th@t?",
+            "startingTime": 577297800,
+            "endingTime": 577301400,
+            "id": 9,
+            "speakerId": 0,
+            "talkDescription": "Attributes - you use them all the time, but what are they really?  What are all the different attributes available?  How do they work?  Join me for an exploration of Swift attributes, ending with an exploration of the Swift compiler source.  For maximum enjoyment, check out the compiler source before you arrive.",
+            "subject": "attributes"
+        },
+        {
+            "title": "I’m a Coder: Codable & NSCoding",
+            "startingTime": 577206900,
+            "endingTime": 577210500,
+            "id": 1,
+            "speakerId": 1,
+            "talkDescription": "Is Codable just a new name for NSCoding? Why do we have both? Can we use them together? You may also want to attend this talk if you’ve been meaning to support State Restoration.",
+            "subject": "state restoration"
+        },
+        {
+            "title": "Hey Siri, How Do I Implement You?",
+            "startingTime": 577211400,
+            "endingTime": 577215000,
+            "id": 2,
+            "speakerId": 2,
+            "talkDescription": "Introduced in iOS 10 and expanded within iOS 12, SiriKit allows your app to interact with the user using voice commands. We will be covering the small, medium, and large implementations of SiriKit shortcuts while talking about the unexpected gotchas as well as concepts for what makes for a meaningful interaction with Siri for the user. ",
+            "subject": "SiriKit"
+        },
+        {
+            "title": "Generic Swift: It Isn’t Supposed to Hurt",
+            "startingTime": 577222200,
+            "endingTime": 577225800,
+            "id": 3,
+            "speakerId": 3,
+            "talkDescription": "They said Swift is “protocol oriented,” so you wrote protocols. But you wanted them to be generic, so you added associated types. But your collections broke, so you added type-erasers. But your “as”-casts broke, so you switched to Any. But then everything broke, so you read about Mirror. And the tears began. Why did it have to be so hard to make an array? \n\nIt doesn’t have to be so hard. But it’s very easy to use the wrong tools to solve the wrong problems. In this session I’ll help you reevaluate what it means to write generic Swift and how to choose the right tools for the job. Whether your goal is reusable view controllers, flexible networking, data-driven UI, effective unit testing, or just the joy of elegant data structures, you’ll learn how to work with Swift and not fight the compiler.",
+            "subject": "generics"
+        },
+        {
+            "title": "Swift as Light",
+            "startingTime": 577226700,
+            "endingTime": 577230300,
+            "id": 4,
+            "speakerId": 4,
+            "talkDescription": "The Glowforge 3D Laser Printer creates beautiful things out of wood, leather, acrylic and more. By leveraging Core Graphics and other iOS APIs, our app allows users to create and manipulate vector graphics which they can send to their Glowforge. In this talk, we will review how we built some of these features in Swift and how Swift helps to make our solutions more robust, elegant and safe.",
+            "subject": "3D printing with Swift"
+        },
+        {
+            "title": "Crows can understand symbols, can Apple's Vision framework?",
+            "startingTime": 577231200,
+            "endingTime": 577234800,
+            "id": 5,
+            "speakerId": 5,
+            "talkDescription": "Details coming soon!",
+            "subject": "vision framework"
+        },
+        {
+            "title": "Living the Monadstic Life",
+            "startingTime": 577238400,
+            "endingTime": 577242000,
+            "id": 6,
+            "speakerId": 6,
+            "talkDescription": "You may think that Functors, Applicative Functors, and Monads are scary. In this keynote, Daniel will show you that “you are already soaking in it”. These patterns are in the life you’re already living - now we just need to get it into your code. Though familiarity with Calculus and Hate Driven Development might aid in your enjoyment of the session, neither is required.",
+            "subject": "functors"
+        },
+        {
+            "title": "Swift 5’s Result type",
+            "startingTime": 577293300,
+            "endingTime": 577296900,
+            "id": 8,
+            "speakerId": 6,
+            "talkDescription": "For years, many developers have added their own Result type to their projects. As of Swift 5, Result is part of the Swift Standard Library. In this session, we’ll spend most of our time motivating Result by looking at fatalError, Optionals, and Errors. Once we see the need for Result we’ll look at how it’s implemented and how we connect it to your workflow using map and flatMap.",
+            "subject": "Swift Result type"
+        },
+        {
+            "title": "TBA",
+            "startingTime": 577288800,
+            "endingTime": 577292400,
+            "id": 7,
+            "speakerId": 7,
+            "talkDescription": "Details coming soon!",
+            "subject": "something cool"
+        },
+        {
+            "title": "TBA",
+            "startingTime": 577305000,
+            "endingTime": 577308600,
+            "id": 10,
+            "speakerId": 8,
+            "talkDescription": "Details coming soon!",
+            "subject": "something cool"
+        },
+        {
+            "title": "TBA",
+            "startingTime": 577309500,
+            "endingTime": 577313100,
+            "id": 11,
+            "speakerId": 9,
+            "talkDescription": "Details coming soon!",
+            "subject": "something cool"
+        }
+    ]
+}

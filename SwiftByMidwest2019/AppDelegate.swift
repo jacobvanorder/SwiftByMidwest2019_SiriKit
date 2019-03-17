@@ -12,29 +12,42 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         guard
-            let splitViewController = window?.rootViewController as? UISplitViewController,
-            let navigationController = splitViewController.viewControllers.last as? UINavigationController,
-            let topController = navigationController.topViewController else {
+            let talkRouterSplitViewController = window?.rootViewController as? TalkRouterSplitViewController,
+            let navigationController = talkRouterSplitViewController.viewControllers.first as? UINavigationController,
+            let talkListTableViewController = navigationController.viewControllers.first as? TalkListTableViewController,
+            let talkDetailViewController = talkRouterSplitViewController.viewControllers.last as? TalkDetailViewController else {
                 fatalError("Configuration of the project is NOT what you expect…:\n")
         }
         
-        topController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-        topController.navigationItem.leftItemsSupplementBackButton = true
-
-        splitViewController.delegate = self
-
+        talkListTableViewController.talkRouterDelegate = talkRouterSplitViewController
+        talkDetailViewController.navigationItem.leftBarButtonItem = talkRouterSplitViewController.displayModeButtonItem
+        talkDetailViewController.navigationItem.leftItemsSupplementBackButton = true
+        
+        talkRouterSplitViewController.delegate = self
+        talkRouterSplitViewController.preferredDisplayMode = .allVisible
+        
         return true
+    }
+    
+    func application(_ application: UIApplication,
+                     continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        if
+            let talkRouterSplitViewController = window?.rootViewController as? TalkRouterSplitViewController {
+            talkRouterSplitViewController.restoreUserActivityState(userActivity)
+            return true
+        }
+        return false
     }
 }
 
-extension AppDelegate: UISplitViewControllerDelegate {
+extension AppDelegate: UISplitViewControllerDelegate {    
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
-        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
-        guard let topAsDetailController = secondaryAsNavController.topViewController as? TalkDetailViewController else { return false }
-        return false
+        guard let _ = secondaryViewController as? TalkDetailViewController else { return true }
+        return true
     }
 }
 

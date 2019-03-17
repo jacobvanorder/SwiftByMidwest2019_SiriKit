@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "00/00 00:00 aa-00:00 aa"; ObjectID = "6uZ-MD-X9T"; */
+"6uZ-MD-X9T.text" = "00/00 00:00 aa-00:00 aa";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"; ObjectID = "AK1-WL-bWo"; */
+"AK1-WL-bWo.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+
+/* Class = "UIViewController"; title = "Detail"; ObjectID = "JEX-9P-axG"; */
+"JEX-9P-axG.title" = "Detail";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "PDp-fI-PZi"; */
+"PDp-fI-PZi.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Qef-XZ-ylO"; */
+"Qef-XZ-ylO.text" = "Title";
+
+/* Class = "UINavigationController"; title = "Master"; ObjectID = "RMx-3f-FxP"; */
+"RMx-3f-FxP.title" = "Master";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"; ObjectID = "aac-ZG-0Cx"; */
+"aac-ZG-0Cx.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+
+/* Class = "UILabel"; text = "FirstName LastName"; ObjectID = "fXj-f5-OjH"; */
+"fXj-f5-OjH.text" = "FirstName LastName";
+
+/* Class = "UINavigationItem"; title = "Detail"; ObjectID = "mOI-FS-AaM"; */
+"mOI-FS-AaM.title" = "Detail";
+
+/* Class = "UILabel"; text = "Please Choose a Speaker"; ObjectID = "ruM-iM-0S2"; */
+"ruM-iM-0S2.text" = "Please Choose a Speaker";
