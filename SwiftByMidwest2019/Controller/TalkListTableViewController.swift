@@ -9,6 +9,7 @@
 import UIKit
 import CoreSpotlight
 import SwiftByMidwest2019Framework
+import IntentsUI
 
 class TalkListTableViewController: UITableViewController {
     
@@ -38,6 +39,11 @@ class TalkListTableViewController: UITableViewController {
                                               talk: talk,
                                               by: speaker,
                                               at: sxmw)
+            userActivity.isEligibleForPrediction = true
+            let localizedString = NSLocalizedString("When is %@ speaking?",
+                                                    comment: "The suggested invocation phrase for a talk.")
+            userActivity.suggestedInvocationPhrase = String(format: localizedString, speaker.fullName)
+
             self.userActivity = userActivity
         }
     }
