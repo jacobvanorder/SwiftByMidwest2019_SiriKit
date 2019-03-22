@@ -21,6 +21,10 @@ class TalkRouterSplitViewController: UISplitViewController {
             let talk = sxmw.talks.filter({$0.id == talkId}).first,
             let speaker = sxmw.speakers.filter({$0.id == speakerId}).first {
             route(to: talk, by: speaker)
+        } else if activity.activityType == NSUserActivity.nextTalkShortcutActivityIndentifer,
+            let talk = sxmw.nextTalk(date: Date()),
+            let speaker = sxmw.speaker(for: talk) {
+            route(to: talk, by: speaker)
         }
     }
 }

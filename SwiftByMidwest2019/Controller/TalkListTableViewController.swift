@@ -10,6 +10,7 @@ import UIKit
 import CoreSpotlight
 import SwiftByMidwest2019Framework
 import IntentsUI
+import Intents
 
 class TalkListTableViewController: UITableViewController {
     
@@ -26,6 +27,9 @@ class TalkListTableViewController: UITableViewController {
     
     //MARK: Delegate
     var talkRouterDelegate: TalkRouterProtocol?
+    
+    //MARK: User Interface
+    @IBOutlet var siriBarButtonItem: UIBarButtonItem!
     
     //MARK: Custom Methods
     func transitionToDetail(for talk: Talk, by speaker: Speaker) {
@@ -52,6 +56,24 @@ class TalkListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = NSLocalizedString("Speakers", comment: "Title for speakers list.")
+        siriBarButtonItem.accessibilityHint = NSLocalizedString("Button to enable Siri Shortcut for next speaker",
+                                                                comment: "The Siri Shortcut accessibility hint")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if (INPreferences.siriAuthorizationStatus() == .authorized) {
+            INVoiceShortcutCenter.shared.getAllVoiceShortcuts {
+                [weak self]
+                (optionalShortcuts: [INVoiceShortcut]?, optionalError) in
+                DispatchQueue.main.async {
+                    let weGotAShortcut = (optionalShortcuts?.filter({$0.shortcut.userActivity?.activityType == NSUserActivity.nextTalkShortcutActivityIndentifer}).first != .none)
+                    self?.siriBarButtonItem.isEnabled = weGotAShortcut
+                }
+            }
+        } else if INPreferences.siriAuthorizationStatus() == .denied {
+            siriBarButtonItem.isEnabled = false
+        }
     }
     
     //MARK: UITableViewDelegate
@@ -88,5 +110,39 @@ class TalkListTableViewController: UITableViewController {
         
         return talkCell
     }
+}
+
+extension TalkListTableViewController: INUIAddVoiceShortcutViewControllerDelegate {
     
+    @IBAction func siriBarButtonItemTapped(_ sender: UIBarButtonItem) {
+        let siriAuthorizationStatus = INPreferences.siriAuthorizationStatus()
+        if siriAuthorizationStatus == .notDetermined {
+            INPreferences.requestSiriAuthorization {
+                [weak self]
+                (newStatus) in
+                DispatchQueue.main.async {
+                    self?.siriBarButtonItemTapped(sender)
+                }
+            }
+        } else if siriAuthorizationStatus == .denied ||
+            siriAuthorizationStatus == .restricted {
+            sender.isEnabled = false
+        } else if siriAuthorizationStatus == .authorized {
+            let identifier = NSUserActivity.nextTalkShortcutActivityIndentifer
+            let userActivity = NSUserActivity(identifier: identifier)
+            let shortcut = INShortcut(userActivity: userActivity)
+            let voiceShortcutViewController = INUIAddVoiceShortcutViewController(shortcut: shortcut)
+            voiceShortcutViewController.delegate = self
+            present(voiceShortcutViewController, animated: true, completion: .none)
+        }
+    }
+    
+    public func addVoiceShortcutViewController(_ controller: INUIAddVoiceShortcutViewController, didFinishWith voiceShortcut: INVoiceShortcut?, error: Error?) {
+        self.siriBarButtonItem.isEnabled = (error != nil)
+        dismiss(animated: true, completion: .none)
+    }
+
+    public func addVoiceShortcutViewControllerDidCancel(_ controller: INUIAddVoiceShortcutViewController) {
+        dismiss(animated: true, completion: .none)
+    }
 }

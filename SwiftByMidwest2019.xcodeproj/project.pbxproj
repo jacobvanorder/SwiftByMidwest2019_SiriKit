@@ -90,6 +90,7 @@
 		1E54140D223D3F700060AE7D /* TalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTests.swift; sourceTree = "<group>"; };
 		1E54140F223D3F840060AE7D /* ConferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceTests.swift; sourceTree = "<group>"; };
 		1E541411223D58450060AE7D /* TalkRouterSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkRouterSplitViewController.swift; sourceTree = "<group>"; };
+		7649E553224FBE2A00D3335A /* SwiftByMidwest2019.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftByMidwest2019.entitlements; sourceTree = "<group>"; };
 		766210F3223ED46200ACF2CB /* Speaker+ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Speaker+ProfileImage.swift"; sourceTree = "<group>"; };
 		766210F5223F35B200ACF2CB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		766210F6223F35B300ACF2CB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 		1E5413A7223C61240060AE7D /* SwiftByMidwest2019 */ = {
 			isa = PBXGroup;
 			children = (
+				7649E553224FBE2A00D3335A /* SwiftByMidwest2019.entitlements */,
 				1E5413A8223C61240060AE7D /* AppDelegate.swift */,
 				766210FC22419ECF00ACF2CB /* Protocols */,
 				766210F2223ED20700ACF2CB /* Extension */,
@@ -328,6 +330,11 @@
 					1E5413A4223C61240060AE7D = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					1E5413C0223C662A0060AE7D = {
 						CreatedOnToolsVersion = 10.1;
@@ -590,7 +597,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftByMidwest2019/SwiftByMidwest2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X4DYCSP4Z;
 				INFOPLIST_FILE = SwiftByMidwest2019/Misc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,7 +617,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftByMidwest2019/SwiftByMidwest2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X4DYCSP4Z;
 				INFOPLIST_FILE = SwiftByMidwest2019/Misc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -16,6 +16,7 @@ import SwiftByMidwest2019Framework
 extension NSUserActivity {
     
     static let talkActivityIdentifier = "com.SushiGrass.SwiftByMidwest2019.TalkActivity"
+    static let nextTalkShortcutActivityIndentifer = "com.SushiGrass.SwiftByMidwest2019.NextTalk"
     
     convenience public init(identifier: String,
                             talk: Talk,
@@ -54,5 +55,15 @@ extension NSUserActivity {
         
         self.contentAttributeSet = spotlightSearch
         self.needsSave = true
+    }
+    
+    convenience public init(identifier: String) {
+        self.init(activityType: identifier)
+        self.persistentIdentifier = NSUserActivityPersistentIdentifier(identifier)
+        if identifier == NSUserActivity.nextTalkShortcutActivityIndentifer {
+            self.title = NSLocalizedString("Who is speaking next at Swift by Midwest?",
+                                               comment: "Title for SiriKit Shortcut Next Speaker Shortcut")
+            self.suggestedInvocationPhrase = NSLocalizedString("Who is speaking next?", comment: "Siri invocation.")
+        }
     }
 }

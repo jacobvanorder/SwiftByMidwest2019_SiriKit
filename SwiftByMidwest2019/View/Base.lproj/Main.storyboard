@@ -66,7 +66,16 @@
                             <outlet property="delegate" destination="PiE-eS-lfr" id="Fu5-ku-ccW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="zGY-dP-WQH"/>
+                    <navigationItem key="navigationItem" id="zGY-dP-WQH">
+                        <barButtonItem key="rightBarButtonItem" title="Siri" id="RHU-0r-g2Y">
+                            <connections>
+                                <action selector="siriBarButtonItemTapped:" destination="PiE-eS-lfr" id="URA-Kk-iUJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="siriBarButtonItem" destination="RHU-0r-g2Y" id="yU4-gk-4sK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utZ-GV-4li" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

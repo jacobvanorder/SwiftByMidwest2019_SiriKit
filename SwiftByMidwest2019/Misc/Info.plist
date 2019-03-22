@@ -51,9 +51,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSiriUsageDescription</key>
+	<string>Ask Siri when the next talk is.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>com.SushiGrass.SwiftByMidwest2019.TalkActivity</string>
+		<string>com.SushiGrass.SwiftByMidwest2019.NextTalk</string>
 	</array>
 </dict>
 </plist>
