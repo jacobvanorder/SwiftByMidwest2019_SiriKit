@@ -29,6 +29,16 @@
 		766210FB2241073D00ACF2CB /* NSUserActivity+Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766210FA2241073D00ACF2CB /* NSUserActivity+Conference.swift */; };
 		766210FE22419EE500ACF2CB /* TalkRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766210FD22419EE500ACF2CB /* TalkRouterProtocol.swift */; };
 		766211012247F23000ACF2CB /* conference_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 766211002247F23000ACF2CB /* conference_es.json */; };
+		76A451B92256EAA900832E4E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A451B82256EAA900832E4E /* IntentHandler.swift */; };
+		76A451BD2256EAA900832E4E /* SwiftByMidwest2019Siri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76A451B62256EAA900832E4E /* SwiftByMidwest2019Siri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76A451C8225824D700832E4E /* IntentObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A451C7225824D700832E4E /* IntentObjectProtocol.swift */; };
+		76A451CB2258254900832E4E /* Speaker+IntentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A451CA2258254900832E4E /* Speaker+IntentObject.swift */; };
+		76A451CD22582E7700832E4E /* Talk+IntentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A451CC22582E7700832E4E /* Talk+IntentObject.swift */; };
+		76A451CF22582F4800832E4E /* TalkQueryIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A451CE22582F4800832E4E /* TalkQueryIntentHandler.swift */; };
+		76FC08FB225A45380057175B /* Conference+IntentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC08FA225A45380057175B /* Conference+IntentObject.swift */; };
+		76FC08FC225EC8A40057175B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 76FC0900225EC8A40057175B /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		76FC08FD225EC8A40057175B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 76FC0900225EC8A40057175B /* Intents.intentdefinition */; };
+		76FC08FE225EC8A40057175B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 76FC0900225EC8A40057175B /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,13 @@
 			remoteGlobalIDString = 1E5413C0223C662A0060AE7D;
 			remoteInfo = SwiftByMidwest2019Framework;
 		};
+		76A451BB2256EAA900832E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E54139D223C61240060AE7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76A451B52256EAA900832E4E;
+			remoteInfo = SwiftByMidwest2019Siri;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +84,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76A451C12256EAA900832E4E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76A451BD2256EAA900832E4E /* SwiftByMidwest2019Siri.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +105,6 @@
 		1E5413AF223C61240060AE7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E5413B1223C61250060AE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5413B4223C61250060AE7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1E5413B6223C61250060AE7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E5413C1223C662A0060AE7D /* SwiftByMidwest2019Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftByMidwest2019Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5413C3223C662A0060AE7D /* SwiftByMidwest2019Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftByMidwest2019Framework.h; sourceTree = "<group>"; };
 		1E5413C4223C662A0060AE7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +125,20 @@
 		766210FA2241073D00ACF2CB /* NSUserActivity+Conference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+Conference.swift"; sourceTree = "<group>"; };
 		766210FD22419EE500ACF2CB /* TalkRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkRouterProtocol.swift; sourceTree = "<group>"; };
 		766211002247F23000ACF2CB /* conference_es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = conference_es.json; sourceTree = "<group>"; };
+		766D92EF225EC8F600F87439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
+		766D92F1225EC8F800F87439 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Intents.strings; sourceTree = "<group>"; };
+		766D92F2225EC9F300F87439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		766D92F4225EC9F800F87439 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		766D92F5225EC9F900F87439 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/Info.plist; sourceTree = "<group>"; };
+		76A451B62256EAA900832E4E /* SwiftByMidwest2019Siri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftByMidwest2019Siri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A451B82256EAA900832E4E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		76A451BA2256EAA900832E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A451C7225824D700832E4E /* IntentObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentObjectProtocol.swift; sourceTree = "<group>"; };
+		76A451CA2258254900832E4E /* Speaker+IntentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Speaker+IntentObject.swift"; sourceTree = "<group>"; };
+		76A451CC22582E7700832E4E /* Talk+IntentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Talk+IntentObject.swift"; sourceTree = "<group>"; };
+		76A451CE22582F4800832E4E /* TalkQueryIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkQueryIntentHandler.swift; sourceTree = "<group>"; };
+		76FC08FA225A45380057175B /* Conference+IntentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conference+IntentObject.swift"; sourceTree = "<group>"; };
+		76FC08FF225EC8A40057175B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +165,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76A451B32256EAA900832E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -133,6 +181,7 @@
 				1E5413A7223C61240060AE7D /* SwiftByMidwest2019 */,
 				1E5413C2223C662A0060AE7D /* SwiftByMidwest2019Framework */,
 				1E5413CF223C662A0060AE7D /* SwiftByMidwest2019FrameworkTests */,
+				76A451B72256EAA900832E4E /* SwiftByMidwest2019Siri */,
 				1E5413A6223C61240060AE7D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +192,7 @@
 				1E5413A5223C61240060AE7D /* SwiftByMidwest2019.app */,
 				1E5413C1223C662A0060AE7D /* SwiftByMidwest2019Framework.framework */,
 				1E5413C9223C662A0060AE7D /* SwiftByMidwest2019FrameworkTests.xctest */,
+				76A451B62256EAA900832E4E /* SwiftByMidwest2019Siri.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +236,7 @@
 		1E5413DF223C694C0060AE7D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76A451C22256ED8000832E4E /* SiriKit */,
 				1E5413E0223C695D0060AE7D /* Speaker.swift */,
 				1E5413E2223C69660060AE7D /* Talk.swift */,
 				1E5413E4223C69900060AE7D /* Conference.swift */,
@@ -216,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				1E5413B1223C61250060AE7D /* Assets.xcassets */,
-				1E5413B6223C61250060AE7D /* Info.plist */,
+				766D92F3225EC9F300F87439 /* Info.plist */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -247,6 +298,36 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		76A451B72256EAA900832E4E /* SwiftByMidwest2019Siri */ = {
+			isa = PBXGroup;
+			children = (
+				76A451B82256EAA900832E4E /* IntentHandler.swift */,
+				76A451BA2256EAA900832E4E /* Info.plist */,
+			);
+			path = SwiftByMidwest2019Siri;
+			sourceTree = "<group>";
+		};
+		76A451C22256ED8000832E4E /* SiriKit */ = {
+			isa = PBXGroup;
+			children = (
+				76A451C92258253900832E4E /* Extensions */,
+				76FC0900225EC8A40057175B /* Intents.intentdefinition */,
+				76A451C7225824D700832E4E /* IntentObjectProtocol.swift */,
+				76A451CE22582F4800832E4E /* TalkQueryIntentHandler.swift */,
+			);
+			path = SiriKit;
+			sourceTree = "<group>";
+		};
+		76A451C92258253900832E4E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76A451CA2258254900832E4E /* Speaker+IntentObject.swift */,
+				76A451CC22582E7700832E4E /* Talk+IntentObject.swift */,
+				76FC08FA225A45380057175B /* Conference+IntentObject.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -269,11 +350,13 @@
 				1E5413A2223C61240060AE7D /* Frameworks */,
 				1E5413A3223C61240060AE7D /* Resources */,
 				1E5413DB223C662A0060AE7D /* Embed Frameworks */,
+				76A451C12256EAA900832E4E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1E5413D5223C662A0060AE7D /* PBXTargetDependency */,
+				76A451BC2256EAA900832E4E /* PBXTargetDependency */,
 			);
 			name = SwiftByMidwest2019;
 			productName = SwiftByMidwest2019;
@@ -317,13 +400,30 @@
 			productReference = 1E5413C9223C662A0060AE7D /* SwiftByMidwest2019FrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		76A451B52256EAA900832E4E /* SwiftByMidwest2019Siri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A451C02256EAA900832E4E /* Build configuration list for PBXNativeTarget "SwiftByMidwest2019Siri" */;
+			buildPhases = (
+				76A451B22256EAA900832E4E /* Sources */,
+				76A451B32256EAA900832E4E /* Frameworks */,
+				76A451B42256EAA900832E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftByMidwest2019Siri;
+			productName = SwiftByMidwest2019Siri;
+			productReference = 76A451B62256EAA900832E4E /* SwiftByMidwest2019Siri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1E54139D223C61240060AE7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jacob Van Order";
 				TargetAttributes = {
@@ -345,6 +445,9 @@
 						LastSwiftMigration = 1020;
 						TestTargetID = 1E5413A4223C61240060AE7D;
 					};
+					76A451B52256EAA900832E4E = {
+						CreatedOnToolsVersion = 10.2;
+					};
 				};
 			};
 			buildConfigurationList = 1E5413A0223C61240060AE7D /* Build configuration list for PBXProject "SwiftByMidwest2019" */;
@@ -364,6 +467,7 @@
 				1E5413A4223C61240060AE7D /* SwiftByMidwest2019 */,
 				1E5413C0223C662A0060AE7D /* SwiftByMidwest2019Framework */,
 				1E5413C8223C662A0060AE7D /* SwiftByMidwest2019FrameworkTests */,
+				76A451B52256EAA900832E4E /* SwiftByMidwest2019Siri */,
 			);
 		};
 /* End PBXProject section */
@@ -395,6 +499,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76A451B42256EAA900832E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -408,6 +519,7 @@
 				1E541412223D58450060AE7D /* TalkRouterSplitViewController.swift in Sources */,
 				766210F4223ED46200ACF2CB /* Speaker+ProfileImage.swift in Sources */,
 				766210FB2241073D00ACF2CB /* NSUserActivity+Conference.swift in Sources */,
+				76FC08FC225EC8A40057175B /* Intents.intentdefinition in Sources */,
 				1E5413A9223C61240060AE7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,9 +528,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A451C8225824D700832E4E /* IntentObjectProtocol.swift in Sources */,
+				76A451CF22582F4800832E4E /* TalkQueryIntentHandler.swift in Sources */,
 				1E5413E5223C69900060AE7D /* Conference.swift in Sources */,
 				1E5413E1223C695D0060AE7D /* Speaker.swift in Sources */,
+				76FC08FD225EC8A40057175B /* Intents.intentdefinition in Sources */,
+				76A451CD22582E7700832E4E /* Talk+IntentObject.swift in Sources */,
+				76A451CB2258254900832E4E /* Speaker+IntentObject.swift in Sources */,
 				1E5413E3223C69660060AE7D /* Talk.swift in Sources */,
+				76FC08FB225A45380057175B /* Conference+IntentObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +547,15 @@
 				1E54140E223D3F700060AE7D /* TalkTests.swift in Sources */,
 				1E54140C223D3F600060AE7D /* SpeakerTests.swift in Sources */,
 				1E541410223D3F840060AE7D /* ConferenceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A451B22256EAA900832E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FC08FE225EC8A40057175B /* Intents.intentdefinition in Sources */,
+				76A451B92256EAA900832E4E /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +577,11 @@
 			target = 1E5413C0223C662A0060AE7D /* SwiftByMidwest2019Framework */;
 			targetProxy = 1E5413D4223C662A0060AE7D /* PBXContainerItemProxy */;
 		};
+		76A451BC2256EAA900832E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76A451B52256EAA900832E4E /* SwiftByMidwest2019Siri */;
+			targetProxy = 76A451BB2256EAA900832E4E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -469,6 +601,26 @@
 				766210F5223F35B200ACF2CB /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		766D92F3225EC9F300F87439 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				766D92F2225EC9F300F87439 /* Base */,
+				766D92F4225EC9F800F87439 /* en */,
+				766D92F5225EC9F900F87439 /* es */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		76FC0900225EC8A40057175B /* Intents.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76FC08FF225EC8A40057175B /* Base */,
+				766D92EF225EC8F600F87439 /* en */,
+				766D92F1225EC8F800F87439 /* es */,
+			);
+			name = Intents.intentdefinition;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -600,7 +752,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftByMidwest2019/SwiftByMidwest2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X4DYCSP4Z;
-				INFOPLIST_FILE = SwiftByMidwest2019/Misc/Info.plist;
+				INFOPLIST_FILE = SwiftByMidwest2019/Misc/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,7 +772,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftByMidwest2019/SwiftByMidwest2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X4DYCSP4Z;
-				INFOPLIST_FILE = SwiftByMidwest2019/Misc/Info.plist;
+				INFOPLIST_FILE = SwiftByMidwest2019/Misc/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,6 +787,7 @@
 		1E5413D9223C662A0060AE7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -664,6 +817,7 @@
 		1E5413DA223C662A0060AE7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -729,6 +883,46 @@
 			};
 			name = Release;
 		};
+		76A451BE2256EAA900832E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X4DYCSP4Z;
+				INFOPLIST_FILE = SwiftByMidwest2019Siri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SushiGrass.SwiftByMidwest2019.SwiftByMidwest2019Siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76A451BF2256EAA900832E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X4DYCSP4Z;
+				INFOPLIST_FILE = SwiftByMidwest2019Siri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SushiGrass.SwiftByMidwest2019.SwiftByMidwest2019Siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -764,6 +958,15 @@
 			buildConfigurations = (
 				1E5413DD223C662A0060AE7D /* Debug */,
 				1E5413DE223C662A0060AE7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A451C02256EAA900832E4E /* Build configuration list for PBXNativeTarget "SwiftByMidwest2019Siri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A451BE2256EAA900832E4E /* Debug */,
+				76A451BF2256EAA900832E4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

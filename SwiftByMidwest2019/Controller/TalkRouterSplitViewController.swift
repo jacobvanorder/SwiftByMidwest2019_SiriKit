@@ -25,6 +25,12 @@ class TalkRouterSplitViewController: UISplitViewController {
             let talk = sxmw.nextTalk(date: Date()),
             let speaker = sxmw.speaker(for: talk) {
             route(to: talk, by: speaker)
+        } else if
+            let talkQueryIntent = activity.interaction?.intent as? TalkQueryIntent,
+            let speaker = sxmw.speaker(from: talkQueryIntent.speaker),
+            let talk = sxmw.talk(from: talkQueryIntent.talk,
+                                 for: speaker) {
+            route(to: talk, by: speaker)
         }
     }
 }
